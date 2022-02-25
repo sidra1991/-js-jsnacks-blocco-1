@@ -60,12 +60,34 @@
 
 
 
-
+// --------------------------------------------------------
 // Snack 5
 // Crea un array vuoto.
 // Chiedi per 6 volte all’utente di inserire un numero,
 // se è dispari inseriscilo nell’array.
+
+// const containerNumberShots = [];
+// const containerNumberEven =[];
+
+// for (let i = 0; i < 6; i++) {
+    
+//     let number = prompt("inserisci un numero")
+    
+//     if ( number%2 == true ) {
+//         containerNumberShots.push(number)
+//     }else {
+//         containerNumberEven.push(number)
+//     }
+
+   
+// }
+//   alert(`ai inserito ${containerNumberShots.length} numeri dispari mentre ne ai inseriti ${containerNumberEven.length} pari ` ) 
+
+
+
+// -------------------------------------------------
 // Snack 6
 // Chiedi un numero di 4 cifre all’utente
 // e calcola la somma di tutte le cifre che compongono il numero.
 
+alert("mi manca solo l'ultimo snack ma vado a prendere il bambino a squola, finiti gli snack li indentero esteticamente")
