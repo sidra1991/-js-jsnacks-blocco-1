@@ -46,8 +46,16 @@
 // Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o
 // no alla festa.
 
- const invited = [ "Mauro contastinescu","henri capidani", ]
+// const invited = [ "Mauro","henri", "Chiara","Sidra","Alessandro","megamen","superma"];
+// let nameprompt = prompt("insersci il tuo nome");
 
+// for (let i = 0; i < invited.length; i++) {
+
+//     if (nameprompt === invited[i]) {
+//         alert(`sei tra i partecipanti. ben arrivato, ${nameprompt}`);
+//     } else{}
+    
+// }
 
 
 
