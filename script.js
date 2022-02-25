@@ -46,7 +46,7 @@
 // Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o
 // no alla festa.
 
- const invited
+ const invited = [ "Mauro contastinescu","henri capidani", ]
 
 
 
