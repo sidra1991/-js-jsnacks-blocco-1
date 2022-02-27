@@ -36,14 +36,15 @@ function snackFunction2(){
 // --------------------------------------
 // Il software deve chiedere per 10 volte all’utente di inserire un numero.
 // Il programma stampa la somma di tutti i numeri inseriti.
-//   let num = 0;
+
+  let num = 0;
 
 //   for (let i = 0; i < 10; i++) {
 //       const newNum = parseInt(prompt(`inserisci numero`));
 //       num += newNum;
 //     }
 
-//   alert(`la somma è ${num}`)
+  document.getElementById(`snackTreeTree`).innerHTML=`la somma dei 10 numeri che ti ho chiesto prima è ${num}`;
 
 // -------------------------------------
 
@@ -52,17 +53,21 @@ function snackFunction2(){
 // Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o
 // no alla festa.
 
-// const invited = [ "Mauro","henri", "Chiara","Sidra","Alessandro","megamen","superma"];
-// let nameprompt = prompt("insersci il tuo nome");
+function snackFunction4() {
 
-// for (let i = 0; i < invited.length; i++) {
+   
+     const invited = [ "Mauro","henri", "Chiara","Sidra","Alessandro","megamen","superman"];
 
-//     if (nameprompt === invited[i]) {
-//         alert(`sei tra i partecipanti. ben arrivato, ${nameprompt}`);
-//     } else{}
-    
-// }
+    for (let i = 0; i < invited.length; i++) {
+        let namePrompt = document.getElementById(`snackfourOne`).value;
+        if (  toString(namePrompt) === invited[i]) {
+            document.getElementById(`snackFourTree`).innerHTML=`sei tra gli invitati ben arrivato ${namePrompt}`;
+        } else{
+            document.getElementById(`snackFourTree`).innerHTML=`non sei il ben venuto ${namePrompt}`;
+        }
 
+    }
+}
 
 
 
