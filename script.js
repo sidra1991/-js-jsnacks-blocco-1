@@ -37,12 +37,25 @@ function snackFunction2(){
 // Il software deve chiedere per 10 volte all’utente di inserire un numero.
 // Il programma stampa la somma di tutti i numeri inseriti.
 
-  let num = 0;
+let num = 0;
+const containerNumberShots = [];
+const containerNumberEven =[];
 
-//   for (let i = 0; i < 10; i++) {
-//       const newNum = parseInt(prompt(`inserisci numero`));
-//       num += newNum;
-//     }
+  for (let i = 0; i < 10; i++) {
+      const newNum = parseInt(prompt(`inserisci numero`));
+      num += newNum;
+
+
+    
+        if ( newNum%2 == true ) {
+        containerNumberShots.push(newNum);
+        }else {
+        containerNumberEven.push(newNum);
+        }
+
+        document.getElementById(`snackFiveTree`).innerHTML=`ai inserito ${containerNumberShots.length} numeri dispari mentre ne ai inseriti ${containerNumberEven.length} pari ` ;
+
+    }
 
   document.getElementById(`snackTreeTree`).innerHTML=`la somma dei 10 numeri che ti ho chiesto prima è ${num}`;
 
@@ -52,15 +65,13 @@ function snackFunction2(){
 // In un array sono contenuti i nomi degli invitati alla festa del grande
 // Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o
 // no alla festa.
+const invited = [ "Mauro","henri", "Chiara","Sidra","Alessandro","megamen","superman"];
 
 function snackFunction4() {
-
-   
-     const invited = [ "Mauro","henri", "Chiara","Sidra","Alessandro","megamen","superman"];
-
     for (let i = 0; i < invited.length; i++) {
         let namePrompt = document.getElementById(`snackfourOne`).value;
-        if (  toString(namePrompt) === invited[i]) {
+
+        if (  namePrompt === invited[i]) {
             document.getElementById(`snackFourTree`).innerHTML=`sei tra gli invitati ben arrivato ${namePrompt}`;
         } else{
             document.getElementById(`snackFourTree`).innerHTML=`non sei il ben venuto ${namePrompt}`;
@@ -77,22 +88,9 @@ function snackFunction4() {
 // Chiedi per 6 volte all’utente di inserire un numero,
 // se è dispari inseriscilo nell’array.
 
-// const containerNumberShots = [];
-// const containerNumberEven =[];
 
-// for (let i = 0; i < 6; i++) {
-    
-//     let number = prompt("inserisci un numero")
-    
-//     if ( number%2 == true ) {
-//         containerNumberShots.push(number)
-//     }else {
-//         containerNumberEven.push(number)
-//     }
+// è stato fuso con lo snack 3
 
-   
-// }
-//   alert(`ai inserito ${containerNumberShots.length} numeri dispari mentre ne ai inseriti ${containerNumberEven.length} pari ` ) 
 
 
 
