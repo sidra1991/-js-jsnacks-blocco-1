@@ -7,9 +7,9 @@
     let num2 = document.getElementById('snackFirstTwo').value;
 
 
-    if (num1 > num2){
+    if (parseInt(num1) > parseInt(num2)){
         document.getElementById('snackFirstTree').innerHTML=`il valore maggiore è ${num1} del primo valore`;
-    } else if (num1 < num2){
+    } else if (parseInt(num2) > parseInt(num1)){
         document.getElementById('snackFirstTree').innerHTML=`il valore maggiore è ${num2} del secondo valore`;
     }else {
         document.getElementById('snackFirstTree').innerHTML='sono valori di pari valore';
@@ -37,27 +37,31 @@ function snackFunction2(){
 // Il software deve chiedere per 10 volte all’utente di inserire un numero.
 // Il programma stampa la somma di tutti i numeri inseriti.
 
-let num = 0;
-const containerNumberShots = [];
-const containerNumberEven =[];
 
-  for (let i = 0; i < 10; i++) {
-      const newNum = parseInt(prompt(`inserisci numero`));
-      num += newNum;
-
-
+function snackFunction3() {
     
+    let num = 0;
+    const containerNumberShots = [];
+    const containerNumberEven =[];
+
+    for (let i = 0; i < 10; i++) {
+        const newNum = parseInt(prompt(`inserisci numero`));
+        num += newNum;
+
         if ( newNum%2 == true ) {
         containerNumberShots.push(newNum);
         }else {
         containerNumberEven.push(newNum);
         }
 
-        document.getElementById(`snackFiveTree`).innerHTML=`ai inserito ${containerNumberShots.length} numeri dispari mentre ne ai inseriti ${containerNumberEven.length} pari ` ;
+        document.getElementById(`snackFiveTree`).innerHTML=`hai inserito ${containerNumberShots.length} numeri dispari mentre ne hai inseriti ${containerNumberEven.length} pari ` ;
 
     }
 
-  document.getElementById(`snackTreeTree`).innerHTML=`la somma dei 10 numeri che ti ho chiesto prima è ${num}`;
+    document.getElementById(`snackTreeTree`).innerHTML=`la somma dei 10 numeri che ti ho chiesto prima è ${num}`;
+}
+
+
 
 // -------------------------------------
 
@@ -74,7 +78,7 @@ function snackFunction4() {
         if (  namePrompt === invited[i]) {
             document.getElementById(`snackFourTree`).innerHTML=`sei tra gli invitati ben arrivato ${namePrompt}`;
         } else{
-            document.getElementById(`snackFourTree`).innerHTML=`non sei il ben venuto ${namePrompt}`;
+            document.getElementById(`snackFourTree`).innerHTML=`non sei il benvenuto ${namePrompt}`;
         }
 
     }
@@ -99,13 +103,16 @@ function snackFunction4() {
 // Chiedi un numero di 4 cifre all’utente
 // e calcola la somma di tutte le cifre che compongono il numero.
 
-/*const userNumber = prompt("dammi un numero di 4 cifre");
-let newNumber = 0;
+function snackFunction6() {
+    
 
-for (let separated = 0; separated < userNumber.length; separated++) {
-    newNumber += parseInt(userNumber[separated]);
+    const userNumber = prompt(`inserisci il tuo numero a 4 cifre`);
+    let fourNumber = 0;
+
+    for (let separated = 0; separated < userNumber.length; separated++) {
+        fourNumber =  fourNumber + parseInt(userNumber[separated]);
+        
+    }
+    document.getElementById(`snackSixTree`).innerHTML=`la somma della tua cifra frammentata è ${fourNumber}`
+
 }
-
-alert(`la somma della tua cifra è ${newNumber}`) */
-
-
