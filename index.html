@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="stile/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+<h1>gli snack</h1>
+
+<div class="snack1" >
     
+    <h2>snack 1</h2>
+    <div class="valoriSnack1" >
+        <label for="number1"> primo valore </label>
+        <input type="number" name="number1" id="snackFirstOne" placeholder="inserisci il primo valore">
+    </div>
+    <div class="valoriSnack1" >
+        <label for="number2"> secondo valore </label>
+        <input type="number" name="number2" id="snackFirstTwo" placeholder="inserisci il secondo valore" >
+    </div>
+    <button type="button" onclick="snackFunction1()" >confronta </button> 
+     <h3 id="snackFirstTree" > il risultato sarà scritto qui </h3>
+</div>
+
+<div class="snack2" >
+    <h2>snack 2</h2>
+    <div class="valoriSnack2" >
+        <label for="word1"> prima parola </label>
+        <input type="text" name="word1" id="snackTwoOne" placeholder="inserisci la parola">
+    </div>
+    <div class="valoriSnack2" >
+        <label for="word2"> seconda parola </label>
+        <input type="text" name="word2" id="snackTwoTwo" placeholder="inserisci la parola" >
+    </div>
+    <button type="button" onclick="snackFunction2()" >confronta </button> 
+    <h3 id="snackTwoTree" > quale sarà la parola più lunga? </h3></div>
+</div>
 
     <script src="script.js"></script>
 </body>

@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+
+h1{
+    text-align: center;
+    background-color: tan;
+}
+
+.snack1 {
+    text-align: center;
+    background-color: aqua;
+    padding-bottom: 50px;
+}
+
+.snack1 input {
+    border-radius: 25px;
+}
+
+.snack1 button {
+    background-color: black;
+    color: white;
+    display: block;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 20px
+}
+
+.snack1 button:hover {
+    background-color: red;
+    border-color: royalblue;
+}
+
+.valoriSnack1{
+    display: inline-block;
+}
+
+.valoriSnack1 label {
+    display: block;
+    text-decoration: underline  seagreen;
+}
+
+.snack2 {
+    color: white;
+    text-align: center;
+    background-color: rgb(0, 60, 255);
+    padding-bottom: 50px;
+}
+
+.snack2 input {
+    border-radius: 25px;
+}
+
+.snack2 button {
+    background-color: rgb(35, 105, 18);
+    color: white;
+    display: block;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 20px
+}
+
+.snack2 button:hover {
+    background-color: rgb(105, 114, 22);
+    border-color: rgb(22, 28, 46);
+}
+
+.valoriSnack2{
+    display: inline-block;
+}
+
+.valoriSnack2 label {
+    display: block;
+    text-decoration: underline  seagreen;
+}
