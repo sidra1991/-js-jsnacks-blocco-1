@@ -116,3 +116,97 @@ function snackFunction6() {
     document.getElementById(`snackSixTree`).innerHTML=`la somma della tua cifra frammentata è ${fourNumber}`
 
 }
+
+
+// Snack 1.9 (quello visto a lezione)
+// Calcola la somma e la media dei primi 10 numeri.// let num = 0;
+    
+// let media = 0;
+// for (let i = 0; i < 10; i++) {
+//     num += i;
+//      media= num & i;
+// }
+// console.log(num)
+
+// versione con while
+// let num = 0;
+// let i = 0;
+// let media = 0;
+
+// while (i <= 10 ) {
+//     num = num + i;
+//     media = num % i;
+
+//     i++
+// }
+// console.log(num)
+// console.log(media)
+
+//------------------------------------------
+
+// Snack 2.1
+// Il software deve chiedere per 5 volte all’utente di inserire un numero.
+// Il programma stampa la somma di tutti i numeri inseriti.
+// Esegui questo programma in due versioni, con il for e con il while.
+
+// const numeroUtente = []
+
+// for (let volte = 0; volte < 5; volte++) {
+//     newNumber = prompt(` inserisci un numero , valore numero : ${volte} `)
+//     numeroUtente.push(newNumber)
+
+// }
+
+// document.querySelector(`body`).innerHTML= `${numeroUtente}`
+
+// versione con while -----------------------------------
+
+// const numeroUtente = [];
+// let volte = 0 ;
+
+// while (volte <= 5) {
+//     newNumber = prompt(` inserisci un numero , valore numero : ${volte} `)
+//     numeroUtente.push(newNumber)
+
+//     volte++
+// }
+
+// document.querySelector(`body`).innerHTML= `${numeroUtente}`
+
+
+// --------------------------------------------------
+// Snack 2.2
+// Inserisci un numero, se è pari stampa il numero,
+// se è dispari stampa il numero successivo
+
+// let numberPPP = prompt( `digita un numero`);
+
+// if (numberPPP % 2 === true) {
+//     alert(` ${numberPPP} `); 
+// }else {
+//     let stamp = parseInt(numberPPP) + 1;
+//     alert (stamp)
+// }
+    
+
+// -----------------------
+
+// Snack 2.3
+// Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di 3 invitati.
+
+const cognomi = [" di pietro","canile","jumangi","tomson","anderson","morganti" ];
+const nomi = ["luca","lucia","nemo","matilda","romeo","daniele"];
+
+const nomiFalsi = [];
+
+let media = cognomi.length + nomi.length %2;
+
+
+for (let falsi = 0; falsi < 3; falsi++) {
+    let random = Math.floor(Math.random()* media )
+
+    nomiFalsi.push(`${cognomi[random]} ${nomi[random]}`)
+
+}
+
+alert(nomiFalsi)
