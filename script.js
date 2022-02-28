@@ -120,27 +120,30 @@ function snackFunction6() {
 
 // Snack 1.9 (quello visto a lezione)
 // Calcola la somma e la media dei primi 10 numeri.// let num = 0;
+
+let upNum = 0;
+let media1 = upNum / 10;
+for (let increase = 0; increase < 10; increase++) {
+    upNum = upNum + increase ;
+}
+document.getElementById(`snackSevenTree`).innerHTML = `la somma di tutti i valori da 0 a 10 è ${upNum} la loro media è ${media1} `;
     
-// let media = 0;
-// for (let i = 0; i < 10; i++) {
-//     num += i;
-//      media= num & i;
-// }
-// console.log(num)
+
 
 // versione con while
-// let num = 0;
-// let i = 0;
-// let media = 0;
 
-// while (i <= 10 ) {
-//     num = num + i;
-//     media = num % i;
+let numWhile = 0;
+let i = 0;
+let media = 0;
 
-//     i++
-// }
-// console.log(num)
-// console.log(media)
+while (i <= 10 ) {
+    numWhile = numWhile + i;
+    media = numWhile / i;
+
+    i++
+}
+
+document.getElementById(`snackEigtTree`).innerHTML= `stessa cosa ma con while invece del for ${numWhile} , fa un processo in più la loro media è ${media} `
 
 //------------------------------------------
 
@@ -194,19 +197,19 @@ function snackFunction6() {
 // Snack 2.3
 // Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di 3 invitati.
 
-const cognomi = [" di pietro","canile","jumangi","tomson","anderson","morganti" ];
-const nomi = ["luca","lucia","nemo","matilda","romeo","daniele"];
+// const cognomi = [" di pietro","canile","jumangi","tomson","anderson","morganti" ];
+// const nomi = ["luca","lucia","nemo","matilda","romeo","daniele"];
 
-const nomiFalsi = [];
+// const nomiFalsi = [];
 
-let media = cognomi.length + nomi.length %2;
+// let media = cognomi.length + nomi.length %2;
 
 
-for (let falsi = 0; falsi < 3; falsi++) {
-    let random = Math.floor(Math.random()* media )
+// for (let falsi = 0; falsi < 3; falsi++) {
+//     let random = Math.floor(Math.random()* media )
 
-    nomiFalsi.push(`${cognomi[random]} ${nomi[random]}`)
+//     nomiFalsi.push(`${cognomi[random]} ${nomi[random]}`)
 
-}
+// }
 
-alert(nomiFalsi)
+// alert(nomiFalsi)
