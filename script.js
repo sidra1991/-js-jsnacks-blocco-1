@@ -133,7 +133,7 @@ document.getElementById(`snackSevenTree`).innerHTML = `la somma di tutti i valor
 // versione con while
 
 let numWhile = 0;
-let i = 0;
+let i = 0; 
 let media = 0;
 
 while (i <= 10 ) {
